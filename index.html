@@ -1,112 +1,1359 @@
-\documentclass[12pt]{article}
-\usepackage[a4paper, margin=1in]{geometry}
-\usepackage[vietnamese]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{enumitem}
-\usepackage[utf8]{vietnam}
 
-\begin{document}
 
-\begin{center}
-\textbf{ĐỀ THI TRẮC NGHIỆM: PHƯƠNG TRÌNH TIẾP TUYẾN VÀ PHƯƠNG PHÁP NEWTON}
-\end{center}
 
-\begin{enumerate}[label=\textbf{Câu \arabic*:}]
-% Câu 1: Phương trình tiếp tuyến cơ bản
-\item Phương trình tiếp tuyến của đồ thị hàm số $y = x^2 + 2x + 1$ tại điểm có hoành độ $x = 1$ là:
-\begin{enumerate}[label=\Alph*.]
-    \item $y = 4x - 2$
-    \item $y = 4x - 1$
-    \item $y = 2x + 1$
-    \item $y = 2x - 1$
-\end{enumerate}
 
-% Câu 2: Tính đạo hàm để tìm phương trình tiếp tuyến
-\item Cho hàm số $y = \sin(x)$ tại điểm $x = \frac{\pi}{2}$. Phương trình tiếp tuyến tại điểm này là:
-\begin{enumerate}[label=\Alph*.]
-    \item $y = x - \frac{\pi}{2}$
-    \item $y = 1$
-    \item $y = -x + \frac{\pi}{2} + 1$
-    \item $y = x + 1$
-\end{enumerate}
 
-% Câu 3: Tiếp tuyến song song với đường thẳng
-\item Tiếp tuyến của đồ thị hàm số $y = x^3 - 3x + 2$ song song với đường thẳng $y = 9x + 5$. Giá trị $x$ tại điểm tiếp xúc là:
-\begin{enumerate}[label=\Alph*.]
-    \item $x = 1$
-    \item $x = -1$
-    \item $x = 2$
-    \item $x = -2$
-\end{enumerate}
 
-% Câu 4: Tiếp tuyến vuông góc với đường thẳng
-\item Điểm tiếp xúc của tiếp tuyến vuông góc với đường thẳng $y = -2x + 3$ trên đồ thị $y = x^2$ có hoành độ là:
-\begin{enumerate}[label=\Alph*.]
-    \item $x = \frac{1}{4}$
-    \item $x = -\frac{1}{4}$
-    \item $x = \frac{1}{2}$
-    \item $x = -\frac{1}{2}$
-\end{enumerate}
+<script type="text/javascript">
 
-% Câu 5: Phương trình tiếp tuyến tại điểm cho trước
-\item Phương trình tiếp tuyến của đồ thị $y = e^x$ tại điểm có tung độ $y = e$ là:
-\begin{enumerate}[label=\Alph*.]
-    \item $y = ex$
-    \item $y = x + e$
-    \item $y = ex + e$
-    \item $y = e(x - 1) + e$
-\end{enumerate}
 
-% Câu 6: Phương pháp Newton cơ bản
-\item Sử dụng phương pháp Newton để tìm nghiệm gần đúng của phương trình $x^3 - x - 2 = 0$ với giá trị ban đầu $x_0 = 1$. Giá trị $x_1$ là:
-\begin{enumerate}[label=\Alph*.]
-    \item $x_1 = 1.5$
-    \item $x_1 = 1.25$
-    \item $x_1 = 2$
-    \item $x_1 = 1.75$
-\end{enumerate}
+var gk_isXlsx = false;
 
-% Câu 7: Công thức lặp Newton
-\item Công thức lặp của phương pháp Newton cho phương trình $f(x) = x^2 - 4$ là:
-\begin{enumerate}[label=\Alph*.]
-    \item $x_{n+1} = x_n - \frac{x_n^2 - 4}{2x_n}$
-    \item $x_{n+1} = x_n - \frac{2x_n}{x_n^2 - 4}$
-    \item $x_{n+1} = x_n + \frac{x_n^2 - 4}{2x_n}$
-    \item $x_{n+1} = x_n - \frac{x_n^2 + 4}{2x_n}$
-\end{enumerate}
 
-% Câu 8: Ứng dụng phương pháp Newton
-\item Tìm nghiệm gần đúng của phương trình $\cos(x) = x$ với giá trị ban đầu $x_0 = 0.5$. Giá trị $x_1$ theo phương pháp Newton là (làm tròn đến 3 chữ số thập phân):
-\begin{enumerate}[label=\Alph*.]
-    \item $x_1 = 0.755$
-    \item $x_1 = 0.739$
-    \item $x_1 = 0.725$
-    \item $x_1 = 0.750$
-\end{enumerate}
+var gk_xlsxFileLookup = {};
 
-% Câu 9: Kết hợp tiếp tuyến và Newton
-\item Cho hàm $f(x) = x^3 - 3x + 1$. Đường tiếp tuyến tại $x = 1$ cắt trục hoành tại điểm có hoành độ $x_1$. Giá trị $x_1$ này có thể được dùng làm giá trị ban đầu cho phương pháp Newton. Giá trị $x_1$ là:
-\begin{enumerate}[label=\Alph*.]
-    \item $x_1 = 0$
-    \item $x_1 = 1$
-    \item $x_1 = \frac{1}{3}$
-    \item $x_1 = -\frac{1}{3}$
-\end{enumerate}
 
-% Câu 10: Ứng dụng nâng cao phương pháp Newton
-\item Khi sử dụng phương pháp Newton để tìm nghiệm của $f(x) = x^4 - 4x^2 + 4$ với $x_0 = 1$, giá trị $x_2$ (làm tròn đến 3 chữ số thập phân) là:
-\begin{enumerate}[label=\Alph*.]
-    \item $x_2 = 1.414$
-    \item $x_2 = 1.500$
-    \item $x_2 = 1.732$
-    \item $x_2 = 2.000$
-\end{enumerate}
-\end{enumerate}
+var gk_fileData = {};
 
-\textbf{Hướng dẫn làm bài:}  
-- Chọn đáp án đúng nhất cho mỗi câu hỏi.  
-- Mỗi câu trả lời đúng được 1 điểm.  
-- Thời gian làm bài: 45 phút.
 
-\end{document}
+function filledCell(cell) {
+
+
+return cell !== '' && cell != null;
+
+
+}
+
+
+function loadFileData(filename) {
+
+
+if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+
+
+try {
+
+
+var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+
+
+var firstSheetName = workbook.SheetNames[0];
+
+
+var worksheet = workbook.Sheets[firstSheetName];
+
+
+
+
+
+
+// Convert sheet to JSON to filter blank rows
+
+
+var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+
+
+// Filter out blank rows (rows where all cells are empty, null, or undefined)
+
+
+var filteredData = jsonData.filter(row => row.some(filledCell));
+
+
+
+
+
+
+// Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+
+
+var headerRowIndex = filteredData.findIndex((row, index) =>
+
+
+row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+
+
+);
+
+
+// Fallback
+
+
+if (headerRowIndex === -1 || headerRowIndex > 25) {
+
+
+headerRowIndex = 0;
+
+
+}
+
+
+
+
+
+
+// Convert filtered JSON back to CSV
+
+
+var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+
+
+csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+
+
+return csv;
+
+
+} catch (e) {
+
+
+console.error(e);
+
+
+return "";
+
+
+}
+
+
+}
+
+
+return gk_fileData[filename] || "";
+
+
+}
+
+
+</script><!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Math Quiz</title>
+
+
+<!-- Tailwind CSS CDN -->
+
+
+<script src="https://c...content-available-to-author-only...s.com"></script>
+
+
+<!-- MathJax CDN -->
+
+
+<script src="https://p...content-available-to-author-only...l.io/v3/polyfill.min.js?features=es6"></script>
+
+
+<script id="MathJax-script" async src="https://c...content-available-to-author-only...r.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- html2pdf.js CDN -->
+
+
+<script src="https://c...content-available-to-author-only...e.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+<style>
+
+
+.btn-option {
+
+
+width: 80px;
+
+
+background-color: #1E90FF;
+
+
+color: white;
+
+
+padding: 8px;
+
+
+border-radius: 4px;
+
+
+cursor: pointer;
+
+
+margin: 0 8px;
+
+
+}
+
+
+.btn-option:hover {
+
+
+background-color: #1873CC;
+
+
+}
+
+
+.btn-correct {
+
+
+background-color: #32CD32;
+
+
+}
+
+
+.btn-correct:hover {
+
+
+background-color: #28A428;
+
+
+}
+
+
+.btn-incorrect {
+
+
+background-color: #FF6347;
+
+
+}
+
+
+.btn-incorrect:hover {
+
+
+background-color: #D94F3A;
+
+
+}
+
+
+.btn-option:disabled {
+
+
+opacity: 1;
+
+
+cursor: default;
+
+
+}
+
+
+#timer-box {
+
+
+background-color: #32CD32;
+
+
+color: white;
+
+
+font-size: 17px;
+
+
+width: 300px;
+
+
+height: 33px;
+
+
+display: flex;
+
+
+justify-content: center;
+
+
+align-items: center;
+
+
+border-radius: 10px;
+
+
+font-weight: bold;
+
+
+margin: 0 auto 20px;
+
+
+}
+
+
+.certificate-container {
+
+
+background-color: #ffffff;
+
+
+border: 4px double #4CAF50;
+
+
+border-radius: 8px;
+
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+padding: 20px;
+
+
+position: relative;
+
+
+overflow: hidden;
+
+
+}
+
+
+.certificate-container::before {
+
+
+content: '';
+
+
+position: absolute;
+
+
+top: 0;
+
+
+left: 0;
+
+
+right: 0;
+
+
+bottom: 0;
+
+
+border: 10px solid #f1f8e9;
+
+
+pointer-events: none;
+
+
+}
+
+
+.option-container {
+
+
+display: flex;
+
+
+flex-direction: column;
+
+
+align-items: center;
+
+
+margin: 0 10px;
+
+
+}
+
+
+.mathjax-formula {
+
+
+min-height: 60px;
+
+
+display: flex;
+
+
+align-items: center;
+
+
+justify-content: center;
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+
+<div id="quizContainer" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+
+
+<h1 class="text-2xl font-bold text-center text-red-700 mb-4">Ma trận nghịch đảo và Định thức</h1>
+
+
+<div id="introScreen" class="space-y-4 text-center">
+
+
+<p>Vui lòng nhập thông tin sinh viên để bắt đầu:</p>
+
+
+<input id="studentName" type="text" placeholder="Họ tên" class="w-full p-2 border rounded">
+
+
+<input id="studentId" type="text" placeholder="MSSV" class="w-full p-2 border rounded">
+
+
+<button id="startQuizButton" class="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600">Bắt đầu bài thi</button>
+
+
+</div>
+
+
+<div id="quizScreen" class="hidden">
+
+
+<div id="timer-box">0</div>
+
+
+<div id="questions" class="space-y-6"></div>
+
+
+<div class="text-center mt-6">
+
+
+<button onclick="finishQuiz()" class="bg-red-500 text-white p-2 rounded hover:bg-red-600">Nộp bài</button>
+
+
+</div>
+
+
+</div>
+
+
+<div id="resultScreen" class="hidden text-center">
+
+
+<h2 id="resultSummary" class="text-xl font-bold"></h2>
+
+
+<div id="resultDetails" class="mt-4"></div>
+
+
+<button onclick="showEmailContent()" class="mt-4 bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Chứng nhận</button>
+
+
+</div>
+
+
+</div>
+
+
+<div id="emailModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+
+
+<div class="bg-white p-6 rounded-lg max-w-2xl w-full">
+
+
+<div id="emailContent"></div>
+
+
+<div class="mt-4 flex justify-center space-x-4">
+
+
+<button onclick="closeEmailModal()" class="bg-gray-500 text-white p-2 rounded hover:bg-gray-600">Đóng</button>
+
+
+<button onclick="downloadPDF()" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Tải PDF</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<script>
+
+
+// State variables
+
+
+let score = 0;
+
+
+let studentName = '';
+
+
+let studentId = '';
+
+
+let seconds = 0;
+
+
+let timerInterval = null;
+
+
+let timerRunning = false;
+
+
+const questions = [
+
+
+{
+
+
+text: "\\text{Câu hỏi 1. Tìm ma trận nghịch đảo của ma trận } A = \\begin{bmatrix} 2 & 1 \\\\ 1 & 3 \\end{bmatrix}.",
+
+
+correct_answer: "B",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"\\begin{bmatrix} 3 & -1 \\\\ -1 & 2 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} \\frac{3}{5} & -\\frac{1}{5} \\\\ -\\frac{1}{5} & \\frac{2}{5} \\end{bmatrix}",
+
+
+"\\begin{bmatrix} 2 & -1 \\\\ -1 & 3 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} \\frac{1}{5} & \\frac{1}{5} \\\\ \\frac{1}{5} & -\\frac{2}{5} \\end{bmatrix}"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 2. Cho ma trận } A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}. \\text{ Ma trận nghịch đảo } A^{-1} \\text{ là gì?}",
+
+
+correct_answer: "A",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"\\begin{bmatrix} -2 & 1 \\\\ \\frac{3}{2} & -\\frac{1}{2} \\end{bmatrix}",
+
+
+"\\begin{bmatrix} 4 & -2 \\\\ -3 & 1 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} 1 & -2 \\\\ -3 & 4 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} -2 & 3 \\\\ 1 & -1 \\end{bmatrix}"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 3. Ma trận nào sau đây không có ma trận nghịch đảo?}",
+
+
+correct_answer: "C",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} 2 & 3 \\\\ 4 & 5 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} 1 & 2 \\\\ 2 & 4 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} 3 & 1 \\\\ 1 & 2 \\end{bmatrix}"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 4. Cho ma trận } A = \\begin{bmatrix} 4 & 1 \\\\ 2 & 3 \\end{bmatrix}. \\text{ Tìm ma trận nghịch đảo } A^{-1}.",
+
+
+correct_answer: "D",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"\\begin{bmatrix} 3 & -1 \\\\ -2 & 4 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} \\frac{1}{10} & -\\frac{1}{10} \\\\ -\\frac{2}{10} & \\frac{4}{10} \\end{bmatrix}",
+
+
+"\\begin{bmatrix} 4 & -1 \\\\ -2 & 3 \\end{bmatrix}",
+
+
+"\\begin{bmatrix} \\frac{3}{10} & -\\frac{1}{10} \\\\ -\\frac{2}{10} & \\frac{4}{10} \\end{bmatrix}"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 5. Nếu ma trận } A \\text{ có định thức bằng 0, điều gì xảy ra với ma trận nghịch đảo của nó?}",
+
+
+correct_answer: "B",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"\\text{Ma trận nghịch đảo luôn tồn tại.}",
+
+
+"\\text{Ma trận nghịch đảo không tồn tại.}",
+
+
+"\\text{Ma trận nghịch đảo tồn tại nhưng không duy nhất.}",
+
+
+"\\text{Ma trận nghịch đảo tồn tại và bằng ma trận đơn vị.}"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 6. Tính định thức của ma trận } \\begin{bmatrix} 3 & 2 \\\\ 1 & 4 \\end{bmatrix}.",
+
+
+correct_answer: "A",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"10",
+
+
+"8",
+
+
+"12",
+
+
+"6"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 7. Định thức của ma trận } \\begin{bmatrix} 1 & 2 & 3 \\\\ 0 & 4 & 5 \\\\ 0 & 0 & 6 \\end{bmatrix} \\text{ là bao nhiêu?}",
+
+
+correct_answer: "C",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"12",
+
+
+"18",
+
+
+"24",
+
+
+"30"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 8. Tính định thức của ma trận } \\begin{bmatrix} 2 & 0 \\\\ 0 & 3 \\end{bmatrix}.",
+
+
+correct_answer: "B",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"5",
+
+
+"6",
+
+
+"4",
+
+
+"8"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 9. Cho ma trận } A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}. \\text{ Công thức tính định thức của } A \\text{ là gì?}",
+
+
+correct_answer: "A",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"ad - bc",
+
+
+"ac - bd",
+
+
+"ab - cd",
+
+
+"ad + bc"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+},
+
+
+{
+
+
+text: "\\text{Câu hỏi 10. Định thức của ma trận đơn vị cấp 3 } I_3 = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\text{ là bao nhiêu?}",
+
+
+correct_answer: "C",
+
+
+options: ['A', 'B', 'C', 'D'],
+
+
+formulas: [
+
+
+"0",
+
+
+"3",
+
+
+"1",
+
+
+"-1"
+
+
+],
+
+
+explanation_links: ["https://b...content-available-to-author-only...n.net/bw30", "https://b...content-available-to-author-only...n.net/bw30"]
+
+
+}
+
+
+];
+
+
+const totalQuestions = questions.length;
+
+
+
+
+
+
+// Start quiz
+
+
+function startQuiz() {
+
+
+studentName = document.getElementById('studentName').value.trim();
+
+
+studentId = document.getElementById('studentId').value.trim();
+
+
+if (!studentName || !studentId) {
+
+
+alert('Vui lòng nhập đầy đủ Họ tên và Mã số sinh viên!');
+
+
+return;
+
+
+}
+
+
+document.getElementById('introScreen').classList.add('hidden');
+
+
+document.getElementById('quizScreen').classList.remove('hidden');
+
+
+seconds = 0;
+
+
+timerRunning = true;
+
+
+document.getElementById('timer-box').textContent = seconds;
+
+
+timerInterval = setInterval(() => {
+
+
+if (timerRunning) {
+
+
+seconds++;
+
+
+document.getElementById('timer-box').textContent = seconds;
+
+
+}
+
+
+}, 1000);
+
+
+displayAllQuestions();
+
+
+}
+
+
+
+
+
+
+// Display all questions
+
+
+function displayAllQuestions() {
+
+
+const questionsDiv = document.getElementById('questions');
+
+
+questionsDiv.innerHTML = '';
+
+
+questions.forEach((question, index) => {
+
+
+const questionDiv = document.createElement('div');
+
+
+questionDiv.className = 'mb-8';
+
+
+questionDiv.innerHTML = `<div class="text-center mb-4 font-bold">\\(${question.text}\\)</div>`;
+
+
+const optionsDiv = document.createElement('div');
+
+
+optionsDiv.className = 'flex justify-center gap-4 flex-wrap';
+
+
+question.options.forEach((option, optIndex) => {
+
+
+const optionContainer = document.createElement('div');
+
+
+optionContainer.className = 'option-container';
+
+
+const button = document.createElement('button');
+
+
+button.className = 'btn-option';
+
+
+button.textContent = option;
+
+
+button.onclick = () => checkAnswer(index, option, button);
+
+
+optionContainer.appendChild(button);
+
+
+const formulaDiv = document.createElement('div');
+
+
+formulaDiv.className = 'mathjax-formula';
+
+
+formulaDiv.innerHTML = `\\(${question.formulas[optIndex]}\\)</div>`;
+
+
+optionContainer.appendChild(formulaDiv);
+
+
+optionsDiv.appendChild(optionContainer);
+
+
+});
+
+
+questionDiv.appendChild(optionsDiv);
+
+
+const feedbackDiv = document.createElement('div');
+
+
+feedbackDiv.id = `feedback-${index}`;
+
+
+feedbackDiv.className = 'mt-4 text-center';
+
+
+questionDiv.appendChild(feedbackDiv);
+
+
+questionsDiv.appendChild(questionDiv);
+
+
+});
+
+
+MathJax.typeset();
+
+
+}
+
+
+
+
+
+
+// Check answer
+
+
+function checkAnswer(questionIndex, selectedOption, button) {
+
+
+const question = questions[questionIndex];
+
+
+const correct = selectedOption === question.correct_answer;
+
+
+if (correct) score++;
+
+
+const feedbackDiv = document.getElementById(`feedback-${questionIndex}`);
+
+
+const feedbackMessage = correct
+
+
+? `Chúc mừng bạn đã chọn phương án đúng là ${selectedOption}. Giải thích ở link: <a href="${question.explanation_links[1]}" target="_blank" class="text-blue-500 underline">https://b...content-available-to-author-only...n.net/bw30</a>`
+
+
+: `Bạn chọn ${selectedOption} là sai, Lựa chọn đúng là ${question.correct_answer}. Giải thích ở link: <a href="${question.explanation_links[0]}" target="_blank" class="text-blue-500 underline">https://b...content-available-to-author-only...n.net/bw30</a>`;
+
+
+feedbackDiv.innerHTML = feedbackMessage;
+
+
+
+
+
+
+// Update button colors
+
+
+const buttons = button.parentElement.parentElement.querySelectorAll('button');
+
+
+buttons.forEach(btn => {
+
+
+if (btn.textContent === question.correct_answer) {
+
+
+btn.className = 'btn-option btn-correct';
+
+
+} else if (btn === button) {
+
+
+btn.className = 'btn-option btn-incorrect';
+
+
+} else {
+
+
+btn.className = 'btn-option';
+
+
+}
+
+
+btn.disabled = true;
+
+
+});
+
+
+}
+
+
+
+
+
+
+// Finish quiz
+
+
+function finishQuiz() {
+
+
+if (timerRunning) {
+
+
+clearInterval(timerInterval);
+
+
+timerRunning = false;
+
+
+document.getElementById('timer-box').textContent = `Đã Hoàn thành trong: ${seconds} giây`;
+
+
+}
+
+
+const percentage = (score / totalQuestions) * 100;
+
+
+const grade = ((score / totalQuestions) * 10).toFixed(1);
+
+
+document.getElementById('quizScreen').classList.add('hidden');
+
+
+document.getElementById('resultScreen').classList.remove('hidden');
+
+
+document.getElementById('resultSummary').textContent = `Quiz completed! Your score: ${score}/${totalQuestions}`;
+
+
+document.getElementById('resultDetails').innerHTML = `Percentage: ${percentage}% <br> Grade: ${grade}/10 <br> Bạn đã làm bài thi này trong thời gian: ${seconds} giây`;
+
+
+}
+
+
+
+
+
+
+// Show certificate
+
+
+function showEmailContent() {
+
+
+const percentage = (score / totalQuestions) * 100;
+
+
+const grade = ((score / totalQuestions) * 10).toFixed(1);
+
+
+const emailContent = `
+
+
+<div class="certificate-container" id="certificate">
+
+
+<div style="text-align: center; font-size: 30px; color: #9e1818; font-weight: bold; margin-bottom: 20px;">
+
+
+CHỨNG NHẬN HOÀN THÀNH
+
+
+</div>
+
+
+<div style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">
+
+
+Ma trận nghịch đảo và Định thức
+
+
+</div>
+
+
+<div style="margin: 20px 0; font-size: 16px; color: #555;">
+
+
+<div style="padding: 15px; border: 1px solid #4CAF50; border-radius: 8px; background-color: #e8f5e9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+
+
+<p><strong>Họ và Tên:</strong> <span style="font-size: 18px; font-weight: bold; color: #4CAF50; background-color: #f1f8e9; padding: 2px 6px; border-radius: 4px;">${studentName}</span></p>
+
+
+<p><strong>Mã Số Sinh Viên:</strong> <span style="font-size: 18px; font-weight: bold; color: #4CAF50; background-color: #f1f8e9; padding: 2px 6px; border-radius: 4px;">${studentId}</span></p>
+
+
+</div>
+
+
+<div style="padding: 15px; border: 1px solid #4CAF50; border-radius: 8px; background-color: #e8f5e9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 15px;">
+
+
+<p>Điểm số: <span style="font-size: 20px; font-weight: bold; color: #ff6347;">${grade}/10</span></p>
+
+
+<p>Tỷ lệ hoàn thành: <span style="font-size: 20px; font-weight: bold; color: #32cd32;">${percentage}%</span></p>
+
+
+</div>
+
+
+<div style="padding: 15px; border: 1px solid #4CAF50; border-radius: 8px; background-color: #e8f5e9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+
+
+<p>Bạn đã làm bài thi này trong thời gian: <span style="font-size: 18px; font-weight: bold; color: #555;">${seconds} giây</span></p>
+
+
+</div>
+
+
+</div>
+
+
+<div style="margin-top: 30px; font-size: 14px; text-align: center; color: #777;">
+
+
+Được cấp bởi,<br>Quiz Organizer<br>
+
+
+Ngày cấp: ${new Date().toLocaleDateString('vi-VN')}
+
+
+</div>
+
+
+</div>
+
+
+`;
+
+
+document.getElementById('emailContent').innerHTML = emailContent;
+
+
+document.getElementById('emailModal').classList.remove('hidden');
+
+
+document.getElementById('emailModal').classList.add('flex');
+
+
+}
+
+
+
+
+
+
+// Download PDF
+
+
+function downloadPDF() {
+
+
+const element = document.getElementById('certificate');
+
+
+const opt = {
+
+
+margin: 0.5,
+
+
+filename: 'Certificate.pdf',
+
+
+image: { type: 'jpeg', quality: 0.98 },
+
+
+html2canvas: { scale: 2 },
+
+
+jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+
+
+};
+
+
+html2pdf().set(opt).from(element).save();
+
+
+}
+
+
+
+
+
+
+// Close modal
+
+
+function closeEmailModal() {
+
+
+document.getElementById('emailModal').classList.add('hidden');
+
+
+}
+
+
+
+
+
+
+// Initialize event listeners
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+document.getElementById('startQuizButton').addEventListener('click', startQuiz);
+
+
+});
+
+
+</script>
+
+
+</body>
+
+
+</html>
+
+
